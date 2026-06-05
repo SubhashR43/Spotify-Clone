@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-white: #fff;
+  --color-gray: #b3b3b3;
+  --bg-color-primary: #121212;
+  --bg-color-gray: #1f1f1f;
+  --scroll-color: #ffffff4d #0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: #fff;
+}
+
+/* ======== NAVBAR CSS ========= */
+.home-icon {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: var(--bg-color-primary);
+}
+
+.search-box {
+  background-color: var(--bg-color-primary);
+  height: 48px;
+}
+
+.search-box input {
+  width: 300px;
+  outline: none;
+}
+
+.navbar-nav li a {
+  color: var(--color-gray);
+}
+
+.navbar-nav li a:hover {
+  color: var(--color-white);
+}
+
+/* ========LEFT SECTION CSS ======== */
+.left-section,
+.right-section {
+  background-color: var(--bg-color-primary);
+}
+
+.scroll-box {
+  height: 240px;
+  overflow-y: auto;
+}
+
+.scroll-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  background: #ffffff4d;
+  border-radius: 10px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.card-box {
+  background-color: var(--bg-color-gray);
+}
+
+.links a {
+  padding: 0.7rem;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.links .links-link a {
+  color: var(--color-white);
+}
+
+/* ======== RIGHT SECTION CSS ======== */
+.right-section {
+  position: relative;
+}
+
+.right-section-heading {
+  margin-block: 15px;
+}
+
+.right-section-content {
+  height: 79vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-gray);
+  font-weight: 700;
+}
+
+a:hover {
+  color: var(--color-white);
+}
+
+.carosel-item {
+  width: 100%;
+}
+
+.carousel-card {
+  width: 10vw;
+  transform: scale(1);
+  transition: 1s ease;
+}
+
+.carousel-card:hover {
+  background-color: var(--bg-color-gray);
+  transform: scale(1.02);
+}
+
+.carousel-card > * {
+  padding-bottom: 5px;
+}
+
+.carousel-card img {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.carousel-card .img-2 {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.carousel-card p {
+  font-size: 14px;
+  overflow: hidden;
+  color: var(--color-gray);
+}
+
+.carousel button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: var(--color-gray);
+  background-color: var(--bg-color-gray);
+}
+
+/* right section footer  */
+footer {
+  margin-bottom: 100px;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+.footer-links ul li a {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.social-links .socialLink {
+  height: 40px;
+  width: 40px;
+  background-color: var(--bg-color-gray);
+  border-radius: 50%;
+}
+
+.socialLink i {
+  color: var(--color-white);
+}
+
+.socialLink:hover {
+  background-color: #ffffff24;
+}
+
+footer p {
+  color: var(--color-gray);
+  font-size: 0.85rem;
+}
+
+/* Play bar CSS */
+.playbar {
+  width: 100%;
+  background-color: var(--bg-color-gray);
+  z-index: 10;
+}
+
+.song-card {
+  width: auto;
+  cursor: pointer;
+  background-color: var(--bg-color-primary);
+}
+
+.song-card img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+}
+
+.song-detail h6,
+p {
+  font-size: 8px;
+  margin-bottom: 2px;
+  padding-inline: 5px;
+}
+
+.playBtns button {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Seekbar */
+.seekBar {
+  width: 30vw;
+  height: 7vh;
+  font-size: 12px;
+  cursor: pointer;
+  color: var(--color-gray);
+}
+
+.seekContainer {
+  width: 80%;
+  height: 4px;
+  background-color: var(--color-gray);
+  position: relative;
+}
+
+.seek {
+  width: 0%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  background-color: var(--color-white);
+}
+
+.seek::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+}
